@@ -1,0 +1,24 @@
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 24px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.cardIcon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 58px;
+}
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.cardTitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+}

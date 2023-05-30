@@ -1,0 +1,25 @@
+.header {
+  padding: 26px 39px;
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #a3aec9;
+}
+.link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #a8b3ce;
+}
+.bottom {
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8px;
+  }
+}
