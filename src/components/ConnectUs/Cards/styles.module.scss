@@ -1,0 +1,35 @@
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+.card {
+  overflow: visible;
+}
+.number {
+  width: 84px;
+  height: 84px;
+  border-radius: 22px;
+  background-color: #3744f5;
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 130%;
+}
+.cardTitle {
+  padding-top: 92px;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 130%;
+}
+
+.link {
+  color: #3744f5;
+}

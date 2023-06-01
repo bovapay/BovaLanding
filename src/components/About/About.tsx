@@ -6,20 +6,28 @@ import Section from "../shared/Section/Section";
 import Paper from "../shared/Paper/Paper";
 import LinkButton from "../shared/LinkButton/LinkButton";
 import Paragraph from "../shared/Paragraph/Paragraph";
-import RatesImg from "../../assets/icons/rates.png";
-import SupportImg from "../../assets/icons/support.png";
-import CurrenciesImg from "../../assets/icons/currencies.png";
-import PaymentsImg from "../../assets/icons/payments.png";
+import RatesImg from "../../assets/images/rates.png";
+import SupportImg from "../../assets/images/support.png";
+import CurrenciesImg from "../../assets/images/currencies.png";
+import PaymentsImg from "../../assets/images/payments.png";
+import { PAPER_DEFAULT_HOVER } from "../../utils/constants/settings";
+import { motion, LayoutGroup } from "framer-motion";
+import getLayoutAnimation from "../../utils/helpers/getLayoutAnimation";
 
 export default function About() {
   return (
     <Section>
       <div className={styles.cards}>
-        <Paper motionProps={{ whileHover: { backgroundColor: "#141725" } }}>
+        <Paper
+          motionProps={{
+            ...PAPER_DEFAULT_HOVER,
+            ...getLayoutAnimation(1),
+          }}
+        >
           <div className={styles.card}>
             <img src={RatesImg} className={styles.cardIcon} alt="тарифы" />
             <div className={styles.cardContent}>
-              <h4>Удобные тарифы</h4>
+              <h4 className={styles.cardTitle}>Удобные тарифы</h4>
               <Paragraph>
                 Мы поможем вам выбрать наилучшие тарифные ставки, которые
                 способствуют быстрому развитию вашего бизнеса. 
@@ -28,11 +36,16 @@ export default function About() {
             </div>
           </div>
         </Paper>
-        <Paper motionProps={{ whileHover: { backgroundColor: "#141725" } }}>
+        <Paper
+          motionProps={{
+            ...PAPER_DEFAULT_HOVER,
+            ...getLayoutAnimation(2),
+          }}
+        >
           <div className={styles.card}>
             <img src={SupportImg} className={styles.cardIcon} alt="поможем" />
             <div className={styles.cardContent}>
-              <h4>Поможем вам 24/7</h4>
+              <h4 className={styles.cardTitle}>Поможем вам 24/7</h4>
               <Paragraph>
                 Наша команда <br /> поддержки всегда готова <br /> помочь вам и
                 быстро <br /> решить все возникающие <br /> проблемы.
@@ -41,11 +54,13 @@ export default function About() {
             </div>
           </div>
         </Paper>
-        <Paper motionProps={{ whileHover: { backgroundColor: "#141725" } }}>
+        <Paper
+          motionProps={{ ...PAPER_DEFAULT_HOVER, ...getLayoutAnimation(3) }}
+        >
           <div className={styles.card}>
             <img src={CurrenciesImg} className={styles.cardIcon} alt="валюта" />
             <div className={styles.cardContent}>
-              <h4>Примем любую валюту</h4>
+              <h4 className={styles.cardTitle}>Примем любую валюту</h4>
               <Paragraph>
                 Мы готовы принимать множество валют и автоматически подбираем
                 нужную валюту для вашего плательщика.  
@@ -54,12 +69,13 @@ export default function About() {
             </div>
           </div>
         </Paper>
-        <Paper motionProps={{ whileHover: { backgroundColor: "#141725" } }}>
+        <Paper
+          motionProps={{ ...PAPER_DEFAULT_HOVER, ...getLayoutAnimation(4) }}
+        >
           <div className={styles.card}>
             <img src={PaymentsImg} className={styles.cardIcon} alt="оплата" />
-
             <div className={styles.cardContent}>
-              <h4>Платёжные решения</h4>
+              <h4 className={styles.cardTitle}>Платёжные решения</h4>
               <Paragraph>
                 Мы предоставляем готовые к использованию способы оплаты, чтобы
                 вы точно смогли найти удобное для себя решение.

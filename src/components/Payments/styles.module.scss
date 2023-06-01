@@ -1,0 +1,64 @@
+.title {
+  margin-bottom: 60px;
+}
+.tabs {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  button {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    padding-bottom: 13px;
+    margin: 0 20px;
+    transition: 0.3s;
+  }
+}
+.grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.cardContainer {
+  &:hover {
+    img {
+      opacity: 0;
+    }
+    .dark {
+      opacity: 0;
+    }
+    .light {
+      opacity: 1;
+    }
+  }
+}
+.card {
+  height: 232px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .imageContainer {
+    position: relative;
+    height: 60px;
+    width: 60px;
+  }
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+  }
+  .dark {
+    opacity: 1;
+  }
+  .light {
+    opacity: 0;
+  }
+  p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+  }
+}

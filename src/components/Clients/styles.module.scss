@@ -1,0 +1,70 @@
+.blockBg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  &.full {
+    right: 121px;
+  }
+}
+.title {
+  margin-bottom: 100px;
+}
+.grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: calc(50% - 12px) calc(50% - 12px);
+  margin-bottom: 24px;
+}
+.blockTitle {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 130%;
+}
+.cardTop {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 557px;
+  z-index: 1;
+  position: relative;
+  &.full {
+    height: 343px;
+  }
+}
+.blockText {
+  max-width: 357px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  &.full {
+    max-width: 552px;
+  }
+}
+.cardBottom {
+  border-top: 1px solid #4a4a4a;
+  padding-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  z-index: 1;
+  position: relative;
+}
+.cardBottomLeft,
+.cardBottomRight {
+  & > div {
+    &:first-child {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+      color: #a8b3ce;
+    }
+    &:nth-child(2) {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+}
+.cardBottomRight {
+  text-align: right;
+}

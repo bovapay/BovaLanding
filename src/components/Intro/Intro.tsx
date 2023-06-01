@@ -4,6 +4,7 @@ import styles from "./styles.module.scss";
 
 import introImage from "../../assets/images/intro.png";
 import LinkButton from "../shared/LinkButton/LinkButton";
+import Tag from "../shared/Tag/Tag";
 
 export default function Intro() {
   return (
@@ -12,9 +13,9 @@ export default function Intro() {
         <img src={introImage} alt="intro" className={styles.bg} />
         <div className={styles.content}>
           <div className={styles.tags}>
-            <span className={styles.tag}>Надежный</span>
-            <span className={styles.tag}>Быстрый</span>
-            <span className={styles.tag}>Простой</span>
+            <Tag>Надежный</Tag>
+            <Tag>Быстрый</Tag>
+            <Tag>Простой</Tag>
           </div>
           <h1 className={styles.title}>Онлайн-сервис приёма платежей</h1>
           <p className={styles.description}>
