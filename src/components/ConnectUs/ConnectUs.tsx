@@ -11,7 +11,7 @@ import Form from "./Form/Form";
 export default function ConnectUs() {
   const [step, setStep] = useState(1);
   return (
-    <Section>
+    <Section id="connectUs">
       <SubTitle className={styles.title}>Всего 3 шага для подключения</SubTitle>
       <Cards />
       <ProgressBar step={step} />

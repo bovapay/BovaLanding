@@ -12,7 +12,7 @@ import PayOut from "./PayOut/PayOut";
 export default function Payments() {
   const [isPayIn, setIsPayIn] = useState(true);
   return (
-    <Section>
+    <Section id="payments">
       <SubTitle className={styles.title}>Методы приема и вывода</SubTitle>
       <div className={styles.tabs}>
         <motion.button

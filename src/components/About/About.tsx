@@ -11,12 +11,11 @@ import SupportImg from "../../assets/images/support.png";
 import CurrenciesImg from "../../assets/images/currencies.png";
 import PaymentsImg from "../../assets/images/payments.png";
 import { PAPER_DEFAULT_HOVER } from "../../utils/constants/settings";
-import { motion, LayoutGroup } from "framer-motion";
 import getLayoutAnimation from "../../utils/helpers/getLayoutAnimation";
 
 export default function About() {
   return (
-    <Section>
+    <Section id="about">
       <div className={styles.cards}>
         <Paper
           motionProps={{
@@ -32,7 +31,7 @@ export default function About() {
                 Мы поможем вам выбрать наилучшие тарифные ставки, которые
                 способствуют быстрому развитию вашего бизнеса. 
               </Paragraph>
-              <LinkButton>Выбрать тариф</LinkButton>
+              <LinkButton href="#about">Выбрать тариф</LinkButton>
             </div>
           </div>
         </Paper>
@@ -50,7 +49,7 @@ export default function About() {
                 Наша команда <br /> поддержки всегда готова <br /> помочь вам и
                 быстро <br /> решить все возникающие <br /> проблемы.
               </Paragraph>
-              <LinkButton>Задать вопрос</LinkButton>
+              <LinkButton href="#about">Задать вопрос</LinkButton>
             </div>
           </div>
         </Paper>
@@ -65,7 +64,7 @@ export default function About() {
                 Мы готовы принимать множество валют и автоматически подбираем
                 нужную валюту для вашего плательщика.  
               </Paragraph>
-              <LinkButton>Открыть список валют</LinkButton>
+              <LinkButton href="#payments">Открыть список валют</LinkButton>
             </div>
           </div>
         </Paper>
@@ -80,7 +79,7 @@ export default function About() {
                 Мы предоставляем готовые к использованию способы оплаты, чтобы
                 вы точно смогли найти удобное для себя решение.
               </Paragraph>
-              <LinkButton>Доступные решения</LinkButton>
+              <LinkButton href="#payments">Доступные решения</LinkButton>
             </div>
           </div>
         </Paper>

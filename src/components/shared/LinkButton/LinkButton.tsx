@@ -4,10 +4,16 @@ import styles from "./styles.module.scss";
 
 import { motion } from "framer-motion";
 import { IWrapComponent } from "../../../utils/styles/types/shared";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
-export default function LinkButton({ children }: IWrapComponent) {
+interface ILinkButton extends IWrapComponent {
+  href?: string;
+  offset?: number;
+}
+
+export default function LinkButton({ children, href, offset }: ILinkButton) {
   return (
-    <a>
+    <AnchorLink href={href} offset={offset}>
       <motion.div
         className={styles.container}
         whileHover={{ backgroundColor: "#4A57FF" }}
@@ -15,6 +21,6 @@ export default function LinkButton({ children }: IWrapComponent) {
       >
         {children}
       </motion.div>
-    </a>
+    </AnchorLink>
   );
 }

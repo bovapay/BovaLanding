@@ -22,7 +22,7 @@ import { motion } from "framer-motion";
 
 export default function Clients() {
   return (
-    <Section>
+    <Section id="clients">
       <SubTitle className={styles.title}>Кто наши клиенты</SubTitle>
       <div className={styles.grid}>
         <Paper motionProps={PAPER_DEFAULT_HOVER}>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import styles from "./styles.module.scss";
 import Button from "../../../shared/Button/Button";
@@ -15,10 +15,10 @@ export default function FirstStep({
   name: string;
 }) {
   function onSubmit(e: any) {
-    if (!e) {
+    e.preventDefault();
+    if (!name) {
       return;
     }
-    e.preventDefault();
     nextStep();
   }
   return (

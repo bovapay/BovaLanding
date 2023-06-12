@@ -15,7 +15,7 @@ import getLayoutAnimation from "../../utils/helpers/getLayoutAnimation";
 
 export default function Order() {
   return (
-    <Section>
+    <Section id="order">
       <SubTitle className={styles.title}>Что мы можем предложить</SubTitle>
       <div className={styles.grid}>
         <Paper

@@ -23,7 +23,9 @@ export default function Intro() {
             карт до QIWI и крипты.
             <br /> Управляйте платежами легко и удобно.
           </p>
-          <LinkButton>Начать приём платежей</LinkButton>
+          <LinkButton href="#connectUsForm" offset={180}>
+            Начать приём платежей
+          </LinkButton>
         </div>
       </div>
     </main>

@@ -20,7 +20,7 @@ import getLayoutAnimation from "../../utils/helpers/getLayoutAnimation";
 
 export default function Advantages() {
   return (
-    <Section>
+    <Section id="advantages">
       <SubTitle className={styles.title}>Преимущества работы с нами</SubTitle>
       <div className={styles.grid}>
         <Paper

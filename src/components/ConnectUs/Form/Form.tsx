@@ -19,7 +19,7 @@ export default function Form({
     setStep((cur) => cur + 1);
   }
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="connectUsForm">
       <div className={styles.header}>
         <h5 className={styles.title}>
           Контактная информация <b>{step}</b>/3
