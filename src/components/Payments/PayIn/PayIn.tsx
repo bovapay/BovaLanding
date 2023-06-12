@@ -3,14 +3,14 @@ import React from "react";
 import styles from "../styles.module.scss";
 
 import Paper from "../../shared/Paper/Paper";
-import QiwiImg from "../../../assets/images/qiwi.png";
-import QiwiLightImg from "../../../assets/images/qiwi-light.png";
-import CardImg from "../../../assets/images/card.png";
-import CardLightImg from "../../../assets/images/card-light.png";
-import EthImg from "../../../assets/images/eth.png";
-import EthLightImg from "../../../assets/images/eth-light.png";
-import UsdtImg from "../../../assets/images/USDT.png";
-import UsdtLightImg from "../../../assets/images/USDT-light.png";
+import QiwiImg from "../../../assets/images/qiwi.svg";
+import QiwiLightImg from "../../../assets/images/qiwi-light.svg";
+import CardImg from "../../../assets/images/card.svg";
+import CardLightImg from "../../../assets/images/card-light.svg";
+import EthImg from "../../../assets/images/eth.svg";
+import EthLightImg from "../../../assets/images/eth-light.svg";
+import UsdtImg from "../../../assets/images/USDT.svg";
+import UsdtLightImg from "../../../assets/images/USDT-light.svg";
 import getLayoutAnimation from "../../../utils/helpers/getLayoutAnimation";
 
 export default function PayIn() {

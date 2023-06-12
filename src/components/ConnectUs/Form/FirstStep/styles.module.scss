@@ -1,0 +1,41 @@
+.form {
+  width: 412px;
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 24px;
+}
+.inputContainer {
+  background-color: #161a27;
+  border-radius: 8px;
+  position: relative;
+  input {
+    width: 100%;
+    padding: 15px 14px 15px 53px;
+    &::placeholder {
+      color: #a8b3ce;
+    }
+  }
+  .icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    path {
+      transition: 0.3s;
+    }
+    &.filled {
+      path {
+        fill: #f3f5f7;
+      }
+    }
+  }
+}
+.link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #a8b3ce;
+  text-align: center;
+}

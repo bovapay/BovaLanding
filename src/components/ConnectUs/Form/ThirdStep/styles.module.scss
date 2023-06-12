@@ -1,0 +1,23 @@
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 44px;
+  }
+  h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    margin-bottom: 16px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #a8b3ce;
+  }
+}
