@@ -9,6 +9,7 @@ import Order from "./components/Order/Order";
 import Advantages from "./components/Advantages/Advantages";
 import Payments from "./components/Payments/Payments";
 import ConnectUs from "./components/ConnectUs/ConnectUs";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Advantages />
         <Payments />
         <ConnectUs />
+        <Footer />
       </AppContainer>
     </div>
   );

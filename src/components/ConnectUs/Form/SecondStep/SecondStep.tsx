@@ -17,18 +17,21 @@ export default function SecondStep({
   nextStep,
   business,
   setBusiness,
+  sendMessage,
 }: {
   nextStep(): void;
   setBusiness: React.Dispatch<React.SetStateAction<string>>;
   business: string;
+  sendMessage(): Promise<any>;
 }) {
   const [error, setError] = useState("");
 
-  function onSubmit(e: any) {
+  async function onSubmit(e: any) {
     e.preventDefault();
     if (!business) {
       return setError("Пожалуйста, выберите тип бизнеса");
     }
+    await sendMessage();
     nextStep();
   }
 

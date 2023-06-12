@@ -30,6 +30,11 @@
     .light {
       opacity: 1;
     }
+    &:hover {
+      p {
+        color: #080808;
+      }
+    }
   }
 }
 .card {
@@ -56,9 +61,11 @@
   .light {
     opacity: 0;
   }
+
   p {
     font-weight: 600;
     font-size: 20px;
     line-height: 130%;
+    transition: 0.3s;
   }
 }

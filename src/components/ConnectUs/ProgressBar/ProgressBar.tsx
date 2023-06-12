@@ -29,6 +29,7 @@ export default function ProgressBar({ step }: { step: number }) {
               type: "spring",
             }}
             className={styles.circleInner}
+            style={{ backgroundColor: step >= 1 ? "#3744f5" : "#1B2067" }}
           >
             {step > 1 && (
               <motion.div
@@ -43,9 +44,19 @@ export default function ProgressBar({ step }: { step: number }) {
             )}
           </motion.div>
         </div>
-        <div className={styles.circleOuter}>
+        <motion.div
+          animate={{ borderColor: step >= 2 ? "#3744f5" : "#1B2067" }}
+          className={styles.circleOuter}
+        >
           <motion.div
-            animate={step > 2 && { width: "100%", height: "100%" }}
+            initial
+            animate={
+              step > 2 && {
+                width: "100%",
+                height: "100%",
+              }
+            }
+            style={{ backgroundColor: step >= 2 ? "#3744f5" : "#1B2067" }}
             transition={{
               type: "spring",
             }}
@@ -54,7 +65,9 @@ export default function ProgressBar({ step }: { step: number }) {
             {step > 2 && (
               <motion.div
                 initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                animate={{
+                  opacity: 1,
+                }}
                 transition={{
                   type: "spring",
                 }}
@@ -63,19 +76,26 @@ export default function ProgressBar({ step }: { step: number }) {
               </motion.div>
             )}
           </motion.div>
-        </div>
-        <div className={styles.circleOuter}>
+        </motion.div>
+        <motion.div
+          animate={{ borderColor: step >= 3 ? "#3744f5" : "#1B2067" }}
+          className={styles.circleOuter}
+        >
           <motion.div
             animate={step > 2 && { width: "100%", height: "100%" }}
             transition={{
               type: "spring",
             }}
             className={styles.circleInner}
+            style={{ backgroundColor: step >= 3 ? "#3744f5" : "#1B2067" }}
           >
             {step > 2 && (
               <motion.div
                 initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+                animate={{
+                  opacity: 1,
+                  backgroundColor: step >= 3 ? "#3744f5" : "#1B2067",
+                }}
                 transition={{
                   type: "spring",
                 }}
@@ -84,7 +104,7 @@ export default function ProgressBar({ step }: { step: number }) {
               </motion.div>
             )}
           </motion.div>
-        </div>
+        </motion.div>
       </div>
       <div className={styles.titles}>
         <div className={styles.item}>

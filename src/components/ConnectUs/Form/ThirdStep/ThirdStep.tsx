@@ -4,7 +4,15 @@ import styles from "./styles.module.scss";
 
 import SuccessImg from "../../../../assets/images/success.png";
 
-export default function ThirdStep() {
+export default function ThirdStep({ isSendError }: { isSendError: boolean }) {
+  if (isSendError) {
+    return (
+      <div className={styles.container}>
+        <h4>Извините!</h4>
+        <p>Произошла непредвиденная ошибка. Повторите попытку позже.</p>
+      </div>
+    );
+  }
   return (
     <div className={styles.container}>
       <img src={SuccessImg} alt="success" />

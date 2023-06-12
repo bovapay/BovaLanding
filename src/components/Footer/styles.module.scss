@@ -1,0 +1,32 @@
+.container {
+  height: 900px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .bg {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .info {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    a {
+      color: #3744f5;
+    }
+    p {
+      margin-bottom: 98px;
+    }
+  }
+}

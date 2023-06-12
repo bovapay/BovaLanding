@@ -8,6 +8,11 @@
   background-color: #161a27;
   border-radius: 8px;
   position: relative;
+  border: 1px solid #161a27;
+  transition: 0.3s;
+  &.danger {
+    border: 1px solid #f53765;
+  }
   input {
     width: 100%;
     padding: 15px 14px 15px 53px;
@@ -30,6 +35,15 @@
         fill: #f3f5f7;
       }
     }
+  }
+  .error {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: #f53765;
+    position: absolute;
+    right: 0;
+    bottom: calc(100% + 4px);
   }
 }
 .link {

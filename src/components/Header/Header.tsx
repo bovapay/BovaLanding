@@ -14,7 +14,7 @@ export default function Header() {
         <div className={styles.logo}>
           <LogoIcon />
         </div>
-        <motion.a
+        <motion.div
           className={styles.link}
           whileHover={{ color: "#3744F5" }}
           whileTap={{ color: "#1D236E" }}
@@ -22,7 +22,7 @@ export default function Header() {
           <AnchorLink href="#connectUsForm" offset={180}>
             Стать клиентом
           </AnchorLink>
-        </motion.a>
+        </motion.div>
       </div>
       <nav className={styles.bottom}>
         <ul>
