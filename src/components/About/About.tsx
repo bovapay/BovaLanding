@@ -31,7 +31,9 @@ export default function About() {
                 Мы поможем вам выбрать наилучшие тарифные ставки, которые
                 способствуют быстрому развитию вашего бизнеса. 
               </Paragraph>
-              <LinkButton href="#about">Выбрать тариф</LinkButton>
+              <LinkButton href="#connectUsForm" offset={180}>
+                Выбрать тариф
+              </LinkButton>
             </div>
           </div>
         </Paper>
@@ -49,7 +51,9 @@ export default function About() {
                 Наша команда <br /> поддержки всегда готова <br /> помочь вам и
                 быстро <br /> решить все возникающие <br /> проблемы.
               </Paragraph>
-              <LinkButton href="#about">Задать вопрос</LinkButton>
+              <LinkButton href="#connectUsForm" offset={180}>
+                Задать вопрос
+              </LinkButton>
             </div>
           </div>
         </Paper>
