@@ -4,4 +4,8 @@
   line-height: 100%;
   color: #f3f5f7;
   text-align: center;
+
+  @media (max-width: 480px) {
+    font-size: 36px;
+  }
 }

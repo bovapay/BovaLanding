@@ -104,7 +104,7 @@ export default function Clients() {
           </div>
         </Paper>
       </div>
-      <Paper motionProps={PAPER_DEFAULT_HOVER}>
+      <Paper motionProps={PAPER_DEFAULT_HOVER} className={styles.lastCard}>
         <motion.img
           src={PaymentImg}
           alt="Payment"

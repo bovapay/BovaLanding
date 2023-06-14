@@ -9,6 +9,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 480px) {
+    padding: 20px;
+    height: 70px;
+  }
 }
 .title {
   color: #f3f5f7;
@@ -21,6 +26,13 @@
     font-size: 34px;
     margin-left: 16px;
   }
+
+  @media (max-width: 480px) {
+    font-size: 18px;
+    b {
+      font-size: 24px;
+    }
+  }
 }
 .body {
   background-color: #0f121c;
@@ -28,6 +40,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+
+  @media (max-width: 480px) {
+    height: auto;
+    min-height: 400px;
+  }
 }
 .footer {
   background: #161a27;
@@ -36,10 +54,12 @@
   align-items: center;
   justify-content: center;
   border-radius: 0 0 30px 30px;
+  padding: 20px;
   p {
     font-weight: 400;
     font-size: 16px;
     line-height: 130%;
     color: #a8b3ce;
+    text-align: center;
   }
 }

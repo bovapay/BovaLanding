@@ -4,21 +4,43 @@
   bottom: 0;
   &.full {
     right: 121px;
+    @media (max-width: 992px) {
+      right: -50px;
+    }
   }
 }
 .title {
   margin-bottom: 100px;
+
+  @media (max-width: 480px) {
+    margin-bottom: 60px;
+  }
 }
 .grid {
   display: grid;
   gap: 24px;
   grid-template-columns: calc(50% - 12px) calc(50% - 12px);
   margin-bottom: 24px;
+  @media (max-width: 992px) {
+    grid-template-columns: 1fr;
+  }
+}
+.lastCard {
+  @media (max-width: 992px) {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 .blockTitle {
   font-weight: 600;
   font-size: 36px;
   line-height: 130%;
+
+  @media (max-width: 480px) {
+    font-size: 28px;
+  }
 }
 .cardTop {
   display: flex;
@@ -27,8 +49,19 @@
   height: 557px;
   z-index: 1;
   position: relative;
+
+  @media (max-width: 480px) {
+    height: 450px;
+  }
   &.full {
     height: 343px;
+    @media (max-width: 992px) {
+      height: 557px;
+    }
+
+    @media (max-width: 480px) {
+      height: 450px;
+    }
   }
 }
 .blockText {
@@ -38,6 +71,9 @@
   gap: 24px;
   &.full {
     max-width: 552px;
+    @media (max-width: 992px) {
+      max-width: 357px;
+    }
   }
 }
 .cardBottom {

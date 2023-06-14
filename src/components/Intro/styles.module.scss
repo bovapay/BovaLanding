@@ -2,6 +2,9 @@
   padding: 0 39px;
   margin-bottom: 50px;
   width: 100%;
+  @media (max-width: 480px) {
+    padding: 0 20px;
+  }
 }
 .container {
   height: 742px;
@@ -10,6 +13,13 @@
   border-radius: 50px;
   display: flex;
   justify-content: center;
+  @media (max-width: 680px) {
+    height: 500px;
+  }
+
+  @media (max-width: 480px) {
+    border-radius: 20px;
+  }
 }
 .bg {
   position: absolute;
@@ -26,8 +36,16 @@
   flex-direction: column;
   gap: 40px;
   align-items: center;
-  z-index: 1;
   position: relative;
+  justify-content: center;
+
+  @media (max-width: 680px) {
+    gap: 30px;
+  }
+  @media (max-width: 480px) {
+    gap: 20px;
+    padding: 30px 20px;
+  }
 }
 .tags {
   display: flex;
@@ -39,10 +57,26 @@
   font-size: 60px;
   line-height: 100%;
   text-align: center;
+  @media (max-width: 680px) {
+    font-size: 38px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 26px;
+  }
 }
 .description {
   font-weight: 400;
   font-size: 20px;
   line-height: 160%;
   text-align: center;
+  @media (max-width: 680px) {
+    font-size: 16px;
+    br {
+      display: none;
+    }
+  }
+  @media (max-width: 480px) {
+    font-size: 12px;
+  }
 }

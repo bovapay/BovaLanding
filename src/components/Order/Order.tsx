@@ -10,8 +10,8 @@ import ChartImg from "../../assets/images/chart.png";
 import CurrenciesImg from "../../assets/images/currencies.png";
 import PayOutImg from "../../assets/images/pay-out.png";
 import ApiImg from "../../assets/images/api.png";
-import { PAPER_ACCENT_HOVER } from "../../utils/constants/settings";
 import getLayoutAnimation from "../../utils/helpers/getLayoutAnimation";
+import { PAPER_ACCENT_HOVER } from "../../utils/constants/settings";
 
 export default function Order() {
   return (

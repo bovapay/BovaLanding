@@ -1,5 +1,26 @@
 .header {
   padding: 26px 39px;
+  z-index: 2;
+
+  &.desktop {
+    @media (max-width: 1280px) {
+      display: none;
+    }
+  }
+  &.mobile {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #080808;
+    width: 100%;
+    display: none;
+    @media (max-width: 1280px) {
+      display: block;
+    }
+    @media (max-width: 480px) {
+      padding: 20px;
+    }
+  }
 }
 .top {
   display: flex;
@@ -21,5 +42,16 @@
     align-items: center;
     justify-content: center;
     padding-top: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 30px;
+    width: 87px;
+    svg {
+      height: 100%;
+      width: 100%;
+    }
   }
 }

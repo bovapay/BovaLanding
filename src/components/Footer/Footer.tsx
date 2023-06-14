@@ -8,12 +8,13 @@ export default function Footer() {
   return (
     <footer className={styles.container}>
       <img src={bgImg} className={styles.bg} alt="bg" />
-      {/* <div className={styles.info}>
+      <div className={styles.info}>
         <p>
-          Если остались вопросы, <br /> пишите на <a>info.paymentstage.io</a>
+          Если остались вопросы, <br /> пишите на{" "}
+          <a href="mailto: info@bovapay.io">info@bovapay.io</a>
         </p>
         <img src={TelegramImg} alt="telegram" />
-      </div> */}
+      </div>
     </footer>
   );
 }

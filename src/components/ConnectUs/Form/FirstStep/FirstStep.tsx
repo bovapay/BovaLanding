@@ -48,9 +48,6 @@ export default function FirstStep({
         )}
       </div>
       <Button>Продолжить</Button>
-      <a href="#" className={styles.link}>
-        У меня нет Telegram аккаунта
-      </a>
     </form>
   );
 }

@@ -2,10 +2,25 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 24px;
+  @media (max-width: 1280px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media (max-width: 992px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 680px) {
+    grid-template-columns: 1fr;
+  }
 }
 .card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  gap: 24px;
+}
+.cardBody {
+  margin-bottom: 24px;
 }
 .cardIcon {
   width: 60px;

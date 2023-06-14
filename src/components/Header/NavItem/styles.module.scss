@@ -5,4 +5,8 @@
   font-size: 16px;
   line-height: 24px;
   color: #a8b3ce;
+
+  @media (max-width: 1280px) {
+    color: inherit;
+  }
 }
