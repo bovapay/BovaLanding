@@ -114,9 +114,9 @@ export default function Clients() {
         />
         <div className={classNames(styles.cardTop, styles.full)}>
           <div>
-            <Tag>Платёжные системы</Tag>
+            <Tag>Интернет-эквайринг</Tag>
           </div>
-          <h3 className={styles.blockTitle}>Крипто-проекты</h3>
+          <h3 className={styles.blockTitle}>Платёжные системы</h3>
           <div className={classNames(styles.blockText, styles.full)}>
             <Paragraph>
               Мы предлагаем готовые решения для электронных <br /> платежей с

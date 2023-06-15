@@ -69,6 +69,7 @@ export default function SecondStep({
           </button>
         ))}
       </div>
+      <input type="hidden" id="token" name="token" />
       <div className={styles.submitContainer}>
         {error && <div className={styles.error}>{error}</div>}
         <Button>Продолжить</Button>
