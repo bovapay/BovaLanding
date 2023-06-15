@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 
 import styles from "./styles.module.scss";
 import Button from "../../../shared/Button/Button";
 import { motion } from "framer-motion";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const variants = [
   "Казино",
@@ -25,13 +26,20 @@ export default function SecondStep({
   sendMessage(): Promise<any>;
 }) {
   const [error, setError] = useState("");
+  const captchaRef = useRef<any>(null);
 
   async function onSubmit(e: any) {
     e.preventDefault();
+    const token = captchaRef?.current?.getValue();
+    console.log(token);
     if (!business) {
       return setError("Пожалуйста, выберите тип бизнеса");
     }
+    if (!token) {
+      return setError("Пожалуйста, подтвердите, что вы не робот");
+    }
     await sendMessage();
+    captchaRef?.current?.reset();
     nextStep();
   }
 
@@ -69,7 +77,12 @@ export default function SecondStep({
           </button>
         ))}
       </div>
-      <input type="hidden" id="token" name="token" />
+      <ReCAPTCHA
+        size="normal"
+        ref={captchaRef}
+        sitekey={"6LfC5pwmAAAAAApecmv4nLhQufkx1fjODV6MgTon"}
+      />
+
       <div className={styles.submitContainer}>
         {error && <div className={styles.error}>{error}</div>}
         <Button>Продолжить</Button>
