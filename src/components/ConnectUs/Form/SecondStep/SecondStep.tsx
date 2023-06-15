@@ -30,8 +30,8 @@ export default function SecondStep({
 
   async function onSubmit(e: any) {
     e.preventDefault();
+    setError("");
     const token = captchaRef?.current?.getValue();
-    console.log(token);
     if (!business) {
       return setError("Пожалуйста, выберите тип бизнеса");
     }
@@ -77,11 +77,13 @@ export default function SecondStep({
           </button>
         ))}
       </div>
-      <ReCAPTCHA
-        size="normal"
-        ref={captchaRef}
-        sitekey={"6LfC5pwmAAAAAApecmv4nLhQufkx1fjODV6MgTon"}
-      />
+      <div className={styles.captcha}>
+        <ReCAPTCHA
+          size="normal"
+          ref={captchaRef}
+          sitekey={"6LfC5pwmAAAAAApecmv4nLhQufkx1fjODV6MgTon"}
+        />
+      </div>
 
       <div className={styles.submitContainer}>
         {error && <div className={styles.error}>{error}</div>}

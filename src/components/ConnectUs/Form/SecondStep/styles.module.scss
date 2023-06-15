@@ -18,7 +18,7 @@
 
 .variants {
   margin-top: 44px;
-  margin-bottom: 64px;
+  margin-bottom: 34px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
@@ -26,6 +26,10 @@
   @media (max-width: 480px) {
     grid-template-columns: 1fr;
   }
+}
+
+.captcha {
+  margin-bottom: 30px;
 }
 
 .circle {
