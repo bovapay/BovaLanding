@@ -13,7 +13,7 @@ export default function Footer() {
           Если остались вопросы, <br /> пишите на{" "}
           <a href="mailto: info@bovapay.io">info@bovapay.io</a>
         </p>
-        <a href="https://t.me/bova_sale" target="_blank">
+        <a href="https://t.me/bovapay" target="_blank">
           <img src={TelegramImg} alt="telegram" />
         </a>
       </div>
