@@ -23,7 +23,7 @@ function AnimatedCounter({ from, to }: CounterProps) {
   // while in view animate the count
   useEffect(() => {
     if (inView) {
-      animate(count, to, { duration: 2 });
+      animate(count, to, { duration: 0.5 });
     }
   }, [count, inView, to]);
 

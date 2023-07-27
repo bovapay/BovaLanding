@@ -55,13 +55,13 @@ export default function Clients() {
             <div className={styles.cardBottomLeft}>
               <div>Подключено клиентов</div>
               <div>
-                <AnimatedCounter from={0} to={CLIENTS_AMOUNT} />
+                <AnimatedCounter from={0} to={7} />
               </div>
             </div>
-            <div className={styles.cardBottomRight}>
+            {/* <div className={styles.cardBottomRight}>
               <div>Обновлено</div>
               <div>{UPDATE_DATE}</div>
-            </div>
+            </div> */}
           </div>
         </Paper>
         <Paper motionProps={PAPER_DEFAULT_HOVER}>
@@ -94,13 +94,13 @@ export default function Clients() {
             <div className={styles.cardBottomLeft}>
               <div>Подключено клиентов</div>
               <div>
-                <AnimatedCounter from={0} to={CLIENTS_AMOUNT} />
+                <AnimatedCounter from={0} to={5} />
               </div>
             </div>
-            <div className={styles.cardBottomRight}>
+            {/* <div className={styles.cardBottomRight}>
               <div>Обновлено</div>
               <div>{UPDATE_DATE}</div>
-            </div>
+            </div> */}
           </div>
         </Paper>
       </div>
@@ -133,13 +133,13 @@ export default function Clients() {
           <div className={styles.cardBottomLeft}>
             <div>Подключено клиентов</div>
             <div>
-              <AnimatedCounter from={0} to={CLIENTS_AMOUNT} />
+              <AnimatedCounter from={0} to={3} />
             </div>
           </div>
-          <div className={styles.cardBottomRight}>
+          {/* <div className={styles.cardBottomRight}>
             <div>Обновлено</div>
             <div>{UPDATE_DATE}</div>
-          </div>
+          </div> */}
         </div>
       </Paper>
     </Section>
